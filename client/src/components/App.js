@@ -1,14 +1,11 @@
 import React, { Component } from 'react';
-import classNames from 'classnames/bind';
-import styles from './App.scss';
-const cx = classNames.bind(styles);
+import Dashboard from './Dashboard';
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        hello
-        <div className={cx('box')} />
+        <Dashboard />
       </div>
     );
   }
