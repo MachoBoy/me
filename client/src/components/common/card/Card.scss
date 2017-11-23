@@ -1,0 +1,25 @@
+@import 'utils';
+
+.card {
+  background: $oc-green-7;
+  width: 200px;
+  height: 40px;
+  border-radius: 20px;
+  cursor: pointer;
+  float: left;
+  margin: 15px 15px 15px 15px;
+  font: 130% $font-stack;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+
+  &:hover {
+    background: $oc-green-6;
+  }
+  &:active {
+    margin-top: 17px;
+    background: $oc-green-8;
+  }
+}
