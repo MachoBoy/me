@@ -1,0 +1,8 @@
+@import 'utils';
+
+.about {
+  font: 500% $font-stack;
+  background: red;
+  margin-top: 120px;
+  @include contentBox();
+}
