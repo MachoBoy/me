@@ -1,0 +1,8 @@
+@import 'utils';
+
+.contact {
+  font: 500% $font-stack;
+  background: yellow;
+  margin-top: 120px;
+  @include contentBox();
+}
