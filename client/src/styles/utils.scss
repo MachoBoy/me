@@ -3,6 +3,11 @@
 
 $font-stack: Helvetica, sans-serif;
 
+@mixin contentBox() {
+  width: auto;
+  height: auto;
+}
+
 @mixin place-at-center() {
   top: 50%;
   left: 50%;
