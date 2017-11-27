@@ -1,0 +1,9 @@
+@import 'utils';
+
+.greeting {
+  font: 800% $font-stack;
+  color: black;
+  display: inline-block;
+  margin-top: 50px;
+  cursor: pointer;
+}

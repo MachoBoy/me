@@ -1,8 +1,25 @@
 @import 'utils';
 
 .about {
-  font: 500% $font-stack;
-  background: red;
-  margin-top: 120px;
-  @include contentBox();
+  font: 150% $font-family;
+  margin-top: $margin-from-menu;
+}
+
+.photo {
+  width: 230px;
+  height: 230px;
+  margin: 20px;
+  float: left;
+}
+
+.aboutContent {
+  display: block;
+  position: relative;
+  padding-left: 250px;
+}
+
+li {
+  margin: 0;
+  display: inline;
+  padding: 10px;
 }

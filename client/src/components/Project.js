@@ -6,7 +6,18 @@ const cx = classNames.bind(styles);
 
 class Project extends Component {
   render() {
-    return <div className={cx('project')}> This is Project section</div>;
+    return (
+      <div className={cx('project')}>
+        <div>This is Project section</div>
+        <p>
+          Jiwon Park is a Web Developer born 1987 in Busan, Korea. My job is to
+          build a web application, which is functional, user-friendly and trendy
+          styling
+        </p>
+        <p>My Skills</p>
+        HTML, CSS, SASS, React, React-Native, NodeJS, Photoshop
+      </div>
+    );
   }
 }
 

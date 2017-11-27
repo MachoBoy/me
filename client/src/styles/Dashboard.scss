@@ -1,18 +1,16 @@
 @import 'utils';
 
 .dashboard {
-  text-align: center;
+  position: absolute;
 }
 
 .greeting {
-  font: 800% $font-stack;
-  color: black;
-  display: inline-block;
-  margin-top: 50px;
+  text-align: center;
 }
 
 .menus {
   position: absolute;
+  text-align: center;
   margin-top: 50px;
   margin-left: auto;
   margin-right: auto;

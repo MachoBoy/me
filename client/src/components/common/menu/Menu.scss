@@ -3,8 +3,7 @@
 .menu {
   position: relative;
   background: $oc-green-7;
-  width: 200px;
-  height: 40px;
+  @include menuButton();
   border-radius: 20px;
   cursor: pointer;
   float: left;
@@ -21,6 +20,6 @@
   }
   &:active {
     margin-top: 17px;
-    background: $oc-green-8;
+    background: $oc-pink-6;
   }
 }

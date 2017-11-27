@@ -1,6 +1,7 @@
 import _ from 'lodash';
 import React, { Component } from 'react';
 import classNames from 'classnames/bind';
+import Greeting from './Greeting';
 import Menu from './common/menu';
 import About from './About';
 import Project from './Project';
@@ -22,6 +23,10 @@ class Dashboard extends Component {
     };
   }
 
+  componentWillMount() {
+    this.renderContent();
+  }
+
   renderMenu() {
     return _.map(MENU_TITLE, ({ key, title }) => (
       <Menu title={title} onClick={() => this.onClickHandler(key)} />
@@ -36,7 +41,6 @@ class Dashboard extends Component {
     switch (this.state.activeIndex) {
       case 0:
         return <About />;
-        break;
       case 1:
         return <Project />;
       case 2:
@@ -47,10 +51,11 @@ class Dashboard extends Component {
   }
 
   render() {
-    console.log(this.state.activeIndex);
     return (
       <div className={cx('dashboard')}>
-        <div className={cx('greeting')}>HELLO</div>
+        <div className={cx('greeting')}>
+          <Greeting />
+        </div>
         <div className={cx('menus')}>{this.renderMenu()}</div>
         <div>{this.renderContent()}</div>
       </div>
