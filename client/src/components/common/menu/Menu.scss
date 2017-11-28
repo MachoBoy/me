@@ -1,6 +1,7 @@
 @import 'utils';
 
 .menu {
+  box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
   position: relative;
   background: $oc-green-7;
   @include menuButton();

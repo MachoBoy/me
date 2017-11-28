@@ -7,7 +7,7 @@ const cx = classNames.bind(styles);
 const About = () => {
   return (
     <div className={cx('about')}>
-      <h4 style={{ margin: '5px' }}>A FEW WORDS ABOUT ME</h4>
+      <h4 style={{ margin: '15px' }}>A FEW WORDS ABOUT ME</h4>
       <img className={cx('photo')} src={require('../images/me.jpg')} />
       <div className={cx('aboutContent')}>
         <div className="myself">
@@ -19,7 +19,7 @@ const About = () => {
             learning web technologies, currently playing around with ReactJS and
             SASS.<br />
             <br />
-            Some of my skills include:
+            <h4 style={{ margin: '0' }}>Some of my skills include:</h4>
           </p>
         </div>
         <div className="skills">

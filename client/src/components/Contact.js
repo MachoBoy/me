@@ -8,14 +8,12 @@ class Contact extends Component {
   render() {
     return (
       <div className={cx('contact')}>
-        <div>This is Project section</div>
-        <p>
-          Jiwon Park is a Web Developer born 1987 in Busan, Korea. My job is to
-          build a web application, which is functional, user-friendly and trendy
-          styling
-        </p>
-        <p>My Skills</p>
-        HTML, CSS, SASS, React, React-Native, NodeJS, Photoshop
+        Contact
+        <div className={cx('contactContents')}>
+          <div>email</div>
+          <div>github</div>
+          <div>Linkedin</div>
+        </div>
       </div>
     );
   }

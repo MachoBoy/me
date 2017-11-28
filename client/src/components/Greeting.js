@@ -13,7 +13,6 @@ const GREETING_HELLO = [
   { key: 'french', text: 'Bonjour' },
   { key: 'italian', text: 'Ciao' },
   { key: 'spanish', text: '¡Hola!' },
-  { key: 'russian', text: 'Здра́вствуйте!' },
   { key: 'hindi', text: 'नमस्ते' }
 ];
 
@@ -28,7 +27,7 @@ class Greeting extends Component {
     event.preventDefault();
     let activeIndex = this.state.activeIndex;
 
-    if (activeIndex == GREETING_HELLO.length - 1) {
+    if (activeIndex === GREETING_HELLO.length - 1) {
       activeIndex = 0;
     } else {
       activeIndex++;
@@ -40,7 +39,7 @@ class Greeting extends Component {
     console.log(this.props);
     return (
       <div className={cx('greeting')} onClick={e => this.onClickHandler(e)}>
-        {GREETING_HELLO[this.state.activeIndex].text}
+        <article>{GREETING_HELLO[this.state.activeIndex].text}</article>
       </div>
     );
   }

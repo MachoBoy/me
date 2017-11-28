@@ -1,8 +1,24 @@
 @import 'utils';
 
 .project {
-  font: 150% $font-stack;
-  background: blue;
-  margin-top: $margin-from-menu;
-  @include contentBox();
+  background: white;
+  display: block;
+  margin: auto;
+  width: 90%;
+  height: 400px;
+  position: relative;
+  font: 150% $font-family;
+  margin-top: 40px;
+  border-radius: 4px;
+  box-sizing: border-box;
+  box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+
+  &:hover {
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  }
+}
+
+.projectContent {
+  position: relative;
 }

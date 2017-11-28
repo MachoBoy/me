@@ -9,11 +9,7 @@ import Contact from './Contact';
 import styles from '../styles/Dashboard.scss';
 
 const cx = classNames.bind(styles);
-const MENU_TITLE = [
-  { key: 0, title: 'About' },
-  { key: 1, title: 'Project' },
-  { key: 2, title: 'Contact' }
-];
+const MENU_TITLE = [{ key: 0, title: 'About' }, { key: 1, title: 'Project' }];
 
 class Dashboard extends Component {
   constructor(props) {
@@ -21,10 +17,6 @@ class Dashboard extends Component {
     this.state = {
       activeIndex: 0
     };
-  }
-
-  componentWillMount() {
-    this.renderContent();
   }
 
   renderMenu() {
@@ -37,19 +29,6 @@ class Dashboard extends Component {
     this.setState({ activeIndex: index });
   }
 
-  renderContent() {
-    switch (this.state.activeIndex) {
-      case 0:
-        return <About />;
-      case 1:
-        return <Project />;
-      case 2:
-        return <Contact />;
-      default:
-        break;
-    }
-  }
-
   render() {
     return (
       <div className={cx('dashboard')}>
@@ -57,7 +36,10 @@ class Dashboard extends Component {
           <Greeting />
         </div>
         <div className={cx('menus')}>{this.renderMenu()}</div>
-        <div>{this.renderContent()}</div>
+        <div className={cx('contents')}>
+          <About />
+          <Project />
+        </div>
       </div>
     );
   }

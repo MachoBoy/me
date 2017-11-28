@@ -1,20 +1,35 @@
 @import 'utils';
 
 .dashboard {
-  position: absolute;
+  position: relative;
+  width: 80%;
+  height: 1400px;
+  margin: auto;
+  background: #f2f2f2;
+  @include box-shadow();
 }
 
 .greeting {
   text-align: center;
+  width: 100%;
+  @include media('<huge') {
+    width: 1024px;
+  }
+
+  @include media('<large') {
+    width: 768px;
+  }
+
+  @include media('<medium') {
+    width: 90%;
+  }
 }
 
 .menus {
   position: absolute;
   text-align: center;
   margin-top: 50px;
-  margin-left: auto;
-  margin-right: auto;
-  left: 0;
-  right: 0;
-  width: 700px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }

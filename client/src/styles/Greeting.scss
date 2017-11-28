@@ -1,9 +1,22 @@
 @import 'utils';
 
 .greeting {
+  background: white;
   font: 800% $font-stack;
+  @include box-shadow();
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
   color: black;
   display: inline-block;
   margin-top: 50px;
   cursor: pointer;
+  width: 60%;
+  height: 200px;
+}
+
+.greeting:hover {
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.greeting:active {
+  @include box-shadow();
 }
